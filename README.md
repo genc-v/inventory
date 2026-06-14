@@ -39,7 +39,7 @@ cd inventory
 docker compose up --build
 ```
 
-- Web UI → locally http://localhost:8080 | domain https://inventory.gencvh.com/
+- Web UI → locally http://localhost:5173 | domain https://inventory.gencvh.com/
 - API → http://localhost:3000/api | domain https://inventory.gencvh.com/api
 
 > Already cloned without `--recurse-submodules`? Run
