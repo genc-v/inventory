@@ -1,0 +1,15 @@
+# Reuse the backend's own compose (db + api) as-is, and add the frontend
+# built from its Dockerfile.
+#   docker compose up --build
+# Web -> http://localhost:5173   API -> http://localhost:3000/api
+include:
+  - inventory-backend/docker-compose.yml
+
+services:
+  web:
+    build:
+      context: ./inventory-frontend
+    ports:
+      - "5173:3000"
+    depends_on:
+      - api
