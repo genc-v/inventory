@@ -1,0 +1,6 @@
+[submodule "inventory-backend"]
+	path = inventory-backend
+	url = https://github.com/genc-v/inventory-backend
+[submodule "inventory-frontend"]
+	path = inventory-frontend
+	url = https://github.com/genc-v/inventory-frontend
